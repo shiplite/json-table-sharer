@@ -1,6 +1,8 @@
-# microapp-template
+# JSON Table Sharer
 
-Starter template for shipping micro-tools fast.
+**#001** of [100 Microprojects Challenge](https://github.com/shiplite)
+
+Paste JSON → see a beautiful HTML table → get a shareable link.
 
 ## Stack
 
@@ -12,10 +14,6 @@ Starter template for shipping micro-tools fast.
 
 ## Quick Start
 
-1. Click **"Use this template"** on GitHub
-2. Clone your new repo
-3. Run setup:
-
 ```bash
 composer install
 npm install
@@ -25,33 +23,20 @@ touch database/database.sqlite
 php artisan migrate
 ```
 
-4. Start developing:
+Start dev server:
 
 ```bash
 composer run dev
 ```
 
-5. Edit your tool:
-   - `app/Livewire/MainTool.php` — logic
-   - `resources/views/livewire/main-tool.blade.php` — template
+Open http://localhost:8000
 
-## Structure
+## How It Works
 
-```
-app/Livewire/MainTool.php                     ← component logic
-resources/views/
-├── components/layouts/app.blade.php          ← base layout
-└── livewire/main-tool.blade.php              ← component template
-routes/web.php                                ← single route
-```
-
-## Deploy
-
-Build assets before deploying:
-
-```bash
-npm run build
-```
+1. Paste a JSON array of objects (or a single object)
+2. See a live table preview
+3. Optionally add a title, click **Share Table**
+4. Copy the generated link — anyone with the link sees a read-only table
 
 ## License
 
